@@ -1,0 +1,16 @@
+= vagrant-centos7-artifactory
+:author: Steve Taylor <Steve.Taylor@taybiz.com>
+
+An example of using vagrant, and some puppet, to spin up an Artifactory box using a CentOS7 machine.
+
+WARNING: This turns down the firewalld service to use the service on http://localhost:18111.
+
+This uses a plugin to keep the virtualbox extension noise/warnings to a minimum
+# vagrant plugin install vagrant-vbguest
+
+To use an internal proxy. Handy for caching all the goodness these things use.
+# vagrant plugin install vagrant-proxyconf
+
+Once this spins up ('vagrant up'), you should be able to go to http://localhost:18081.
+
+The default username and password are 'admin' and 'password'. Change those.
