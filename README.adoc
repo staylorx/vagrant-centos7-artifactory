@@ -3,7 +3,7 @@
 
 An example of using vagrant, and some puppet, to spin up an Artifactory box using a CentOS7 machine.
 
-WARNING: This turns down the firewalld service to use the service on http://localhost:18111.
+WARNING: This turns down the firewalld service to use the service on http://localhost:18081.
 
 This uses a plugin to keep the virtualbox extension noise/warnings to a minimum
 # vagrant plugin install vagrant-vbguest
